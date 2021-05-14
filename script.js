@@ -23,9 +23,19 @@ function generatePassword() {
   
 
   if (useLowerCase != "Y" && useUpperCase != "Y" && useNumberChoices != "Y" && useSpecialCharacters != "Y") {
-   alert("Please select at least one character")
+   alert("Please select at least one character");
+    var useLowerCase = prompt("Do you want lowercase characters", "Y/N");
+    var useUpperCase = prompt("Do you want uppercase characters", "Y/N");
+    var useNumberChoices = prompt("Do you want numerical characters", "Y/N");
+    var useSpecialCharacters = prompt("Do you want special characters", "Y/N");
   }
   var passwordLength = prompt("How long do you want you password", "password must be larger then 8 and lower then 128");
+
+  if (passwordLength < 8) {
+    alert("The number you entered is too short")}
+  else if (passwordLength > 128) {
+    alert("The number you entered is too long")
+  }
 }
 
 
