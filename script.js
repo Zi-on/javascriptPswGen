@@ -15,10 +15,16 @@ function writePassword() {
 
 }
 function generatePassword() {
-  var useLowerCase = prompt("Do you want uppercase characters", "Y/N");
+
+  var useLowerCase = prompt("Do you want lowercase characters", "Y/N");
   var useUpperCase = prompt("Do you want uppercase characters", "Y/N");
   var useNumberChoices = prompt("Do you want numerical characters", "Y/N");
   var useSpecialCharacters = prompt("Do you want special characters", "Y/N");
+  
+
+  if (useLowerCase != "Y" && useUpperCase != "Y" && useNumberChoices != "Y" && useSpecialCharacters != "Y") {
+   alert("Please select at least one character")
+  }
   var passwordLength = prompt("How long do you want you password", "password must be larger then 8 and lower then 128");
 }
 
