@@ -42,51 +42,204 @@ function generatePassword() {
     charactersChosen = lowerCase.concat(upperCase, numberChoices, specialCharacters);
     var result = [];
   for (var i = 0; i < passwordLength; i++) {
-    var allChoices = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
-    result.push(allChoices)
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
     
     password = result.join('')
     
     console.log(password);
   }
-    
     return password;
-  
-    
-      
-  
-    
-    
-  
-  
   }
   
   if (useLowerCase != "Y" && useUpperCase == "Y" && useNumberChoices == "Y" && useSpecialCharacters == "Y"){
     charactersChosen = upperCase.concat(specialCharacters, numberChoices);
+    var result = [];
   for (var i = 0; i < passwordLength; i++) {
-      password = charactersChosen[Math.floor(Math.random()*charactersChosen.length)]
-      console.log(password)}
+      var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)]
+    result.push(randomChar)  
+
+    password = result.join('')
+    
+    console.log(password)
+    }
+    return password;
   }
-  
+
   if (useLowerCase == "Y" && useUpperCase != "Y" && useNumberChoices == "Y" && useSpecialCharacters == "Y"){
     charactersChosen = lowerCase.concat(numberChoices, specialCharacters);
-    for (var i = 0; i < passwordLength; i++) {
-      password = charactersChosen[Math.floor(Math.random()*charactersChosen.length)]
-      console.log(password)}
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
   }
 
   if (useLowerCase == "Y" && useUpperCase == "Y" && useNumberChoices != "Y" && useSpecialCharacters == "Y"){
     charactersChosen = lowerCase.concat(upperCase, specialCharacters);
-    for (var i = 0; i < passwordLength; i++) {
-      password = charactersChosen[Math.floor(Math.random()*charactersChosen.length)]
-      console.log(password)}
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
   }
 
   if (useLowerCase == "Y" && useUpperCase == "Y" && useNumberChoices == "Y" && useSpecialCharacters != "Y"){
     charactersChosen = lowerCase.concat(upperCase, numberChoices);
-    for (var i = 0; i < passwordLength; i++) {
-      password = charactersChosen[Math.floor(Math.random()*charactersChosen.length)]
-      console.log(password)}
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase == "Y" && useUpperCase == "Y" && useNumberChoices != "Y" && useSpecialCharacters != "Y"){
+    charactersChosen = lowerCase.concat(upperCase);
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase == "Y" && useUpperCase != "Y" && useNumberChoices == "Y" && useSpecialCharacters != "Y"){
+    charactersChosen = lowerCase.concat(numberChoices);
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase == "Y" && useUpperCase != "Y" && useNumberChoices != "Y" && useSpecialCharacters == "Y"){
+    charactersChosen = lowerCase.concat(specialCharacters);
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+  
+  if (useLowerCase != "Y" && useUpperCase == "Y" && useNumberChoices == "Y" && useSpecialCharacters != "Y"){
+    charactersChosen = upperCase.concat(numberChoices);
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+  
+  if (useLowerCase != "Y" && useUpperCase == "Y" && useNumberChoices != "Y" && useSpecialCharacters == "Y"){
+    charactersChosen = upperCase.concat(specialCharacters)
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase != "Y" && useUpperCase != "Y" && useNumberChoices == "Y" && useSpecialCharacters == "Y"){
+    charactersChosen = numberChoices.concat(specialCharacters);
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase == "Y" && useUpperCase != "Y" && useNumberChoices != "Y" && useSpecialCharacters != "Y"){
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = lowerCase[Math.floor(Math.random()*lowerCase.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+  if (useLowerCase != "Y" && useUpperCase == "Y" && useNumberChoices != "Y" && useSpecialCharacters != "Y"){
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = upperCase[Math.floor(Math.random()*upperCase.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+
+  if (useLowerCase != "Y" && useUpperCase != "Y" && useNumberChoices == "Y" && useSpecialCharacters != "Y"){
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = numberChoices[Math.floor(Math.random()*numberChoices.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
+  }
+  if (useLowerCase != "Y" && useUpperCase != "Y" && useNumberChoices != "Y" && useSpecialCharacters == "Y"){
+    var result = [];
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChar = specialCharacters[Math.floor(Math.random()*specialCharacters.length)];
+    result.push(randomChar)
+    
+    password = result.join('')
+    
+    console.log(password);
+  }
+    return password;
   }
   }
   
