@@ -40,15 +40,17 @@ function generatePassword() {
   
   if (useLowerCase == "Y" && useUpperCase == "Y" && useNumberChoices == "Y" && useSpecialCharacters == "Y"){
     charactersChosen = lowerCase.concat(upperCase, numberChoices, specialCharacters);
+    var result = [];
   for (var i = 0; i < passwordLength; i++) {
-    var result = []
     var allChoices = charactersChosen[Math.floor(Math.random()*charactersChosen.length)];
-    allChoices.concat()
+    result.push(allChoices)
     
-    console.log(result);
+    password = result.join('')
+    
+    console.log(password);
   }
     
-    return ;
+    return password;
   
     
       
