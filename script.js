@@ -35,7 +35,7 @@ function generatePassword() {
   }
   // variable for password length prompt
   var passwordLength = prompt(
-    "How long do you want you password",
+    "How long do you want your password",
     "must be between 8-128"
   );
 // if password length is not within the parameters you are given a alert message
