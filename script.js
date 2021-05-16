@@ -13,13 +13,14 @@ function writePassword() {
 
   passwordText.value = password;
 }
+// Created variables for my prompts and a empty string for my result
 function generatePassword() {
   var useLowerCase = prompt("Do you want lowercase characters", "Y/N");
   var useUpperCase = prompt("Do you want uppercase characters", "Y/N");
   var useNumberChoices = prompt("Do you want numerical characters", "Y/N");
   var useSpecialCharacters = prompt("Do you want special characters", "Y/N");
   var result = "";
-
+// made a condition that if no character is chosen a alert is given and you are re given the
   if (
     useLowerCase != "Y" &&
     useUpperCase != "Y" &&
@@ -32,17 +33,18 @@ function generatePassword() {
     var useNumberChoices = prompt("Do you want numerical characters", "Y/N");
     var useSpecialCharacters = prompt("Do you want special characters", "Y/N");
   }
+  // variable for password length prompt
   var passwordLength = prompt(
     "How long do you want you password",
-    "password must be larger then 8 and lower then 128"
+    "must be between 8-128"
   );
-
+// if password length is not within the parameters you are given a alert message
   if (passwordLength < 8) {
     alert("The number you entered is too short");
   } else if (passwordLength > 128) {
     alert("The number you entered is too long");
   }
-
+// created my for loops that generates a random password based on characters u chose to include
   if (
     useLowerCase == "Y" &&
     useUpperCase == "Y" &&
